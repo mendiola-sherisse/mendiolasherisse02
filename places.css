@@ -1,0 +1,260 @@
+body {
+    background-color: #2B1E15;
+    font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
+    color: #DBD1CA;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #2B1E15;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #DBD1CA;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.navbar a i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #4D3626;
+    color: #DBD1CA;
+    font-weight: bold;
+}
+
+.navbar a i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+.place-content {
+    background-color: #DBD1CA;
+    margin: 100px 50px 50px;
+    padding: 50px;
+    border-radius: 20px;
+    color: #2B1E15;
+}
+
+div.place{
+    background-color: #DBD1CA;
+    margin: 100px 50px 50px;
+    padding: 50px;
+    border-radius: 20px;
+    color: #2B1E15;
+  }
+
+h1 {
+    font-family: Georgia, Garamond, serif;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    color: #2B1E15;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 5px;
+}
+
+.gallery-section {
+    margin: 30px 0;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.photo-gallery a {
+    background: #fff;
+    padding: 15px 15px 40px;
+    display: inline-block;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.photo-gallery a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 2px dashed #2B1E15;
+}
+
+
+.photo-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.photo-gallery a::after {
+    content: attr(title);
+    display: block;
+    text-align: center;
+    color: #2B1E15;
+    font-family: "Trebuchet MS", cursive;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.place-section {
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.place-section h2 {
+    font-family: Garamond, Georgia, serif;
+    color: #2B1E15;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.place-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.place-section ul li {
+    margin: 15px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.place-section ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4D3626;
+    font-size: 20px;
+}
+
+.place-section p {
+    line-height: 1.8;
+    text-align: justify;
+    padding: 0 10px;
+}
+.places-description {
+    background-color: #DBD1CA;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    color: #2B1E15;
+}
+
+.place-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.place-intro h2 {
+    font-family: Garamond, Georgia;
+    color: #2B1E15;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.destination {
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.destination h3 {
+    font-family: Garamond, Georgia;
+    color: #2B1E15;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.destination p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.destination i {
+    margin-right: 10px;
+}
+.description{
+    font-size: 20px;
+    text-align: center;
+    color: #2B1E15;
+    font-family: Garamond,  Georgia;
+}
+.top {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  a[href="#top"]{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2B1E15;
+    color: #DBD1CA;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #2B1E15;
+  }
+  
+  a[href="#top"]:hover{
+    background-color: #4D3626;
+    color: #DBD1CA;
+    border: 2px solid #4D3626;
+    font-weight: bold;
+  }
+  
+  a[href="#top"]:focus{
+    outline: 3px solid #2B1E15 ; 
+    outline-offset: 2px; 
+    background-color: #4D3626;
+    color: #DBD1CA;
+    border: 2px solid #4D3626;
+    font-weight: bold;
+  }
+  
+
+@media (max-width: 768px) {
+    .place-content {
+        margin: 80px 20px 20px;
+        padding: 20px;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+}

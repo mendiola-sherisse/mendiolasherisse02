@@ -1,0 +1,244 @@
+body {
+    background-color: #2B1E15;
+    font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
+    color: #DBD1CA;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #2B1E15;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #DBD1CA;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.navbar a i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #4D3626;
+    color: #DBD1CA;
+    font-weight: bold;
+}
+
+.navbar a i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+.resume-container {
+    background: #DBD1CA;
+    padding: 50px;
+    margin:50px 50px;
+    border-radius: 20px;
+    color: #2B1E15;
+}
+
+h1 {
+    font-family: Garamond, Georgia, serif;
+    text-align: center;
+    color: #2B1E15;
+    font-size: 3.5em;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.profile-photo {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2B1E15;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.profile-info {
+    text-align: center;
+    width: 100%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 28px;
+    border-bottom: none;
+}
+
+.contact-info {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #2B1E15;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section {
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: Georgia, Garamond, serif;
+    font-size: 24px;
+    color: #2B1E15;
+    border-bottom: 2px solid #2B1E15;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.section ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+}
+div.skills-grid{
+    display: inline-block;
+
+}
+.section ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.section ul li:before {
+    position: fixed;
+    left: 0;
+    color: #4D3626;
+}
+
+.education-list li {
+    margin-bottom: 15px;
+}
+
+.education-list strong {
+    color: #2B1E15;
+}
+
+.top {
+    text-align: center;
+    margin-top: 30px;
+}
+
+a[href="#top"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2B1E15;
+    color: #DBD1CA;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #2B1E15;
+}
+
+a[href="#top"]:hover {
+    background-color: #4D3626;
+    color: #DBD1CA;
+    border: 2px solid #4D3626;
+    font-weight: bold;
+}
+
+a[href="#top"]:focus {
+    outline: 3px solid #2B1E15;
+    outline-offset: 2px;
+    background-color: #4D3626;
+    color: #DBD1CA;
+    border: 2px solid #4D3626;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-info p {
+        justify-content: center;
+    }
+    
+    .resume-container {
+        margin: 80px 20px 20px;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    .profile-photo img {
+        width: 150px;
+        height: 150px;
+    }
+}
